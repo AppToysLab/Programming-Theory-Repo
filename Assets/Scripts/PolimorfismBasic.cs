@@ -39,7 +39,7 @@ public class PolimorfismBasic : MonoBehaviour
 
    public virtual void Show(int count)
     {
-        Debug.Log("Parent");
+        print(" Void Show on te basic class ");
     }
 
 }

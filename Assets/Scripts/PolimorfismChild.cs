@@ -13,15 +13,16 @@ public class PolimorfismChild : PolimorfismBasic
 
     void Update()
     {
-        
+
     }
 
     public override void Show(int count)
     {
         switch (count)
         {
-            case 1:  Show1(count);
-            break;
+            case 1: Show1(count);
+                    
+                break;
             case 2:
                 Show2(count);
                 break;
@@ -33,9 +34,24 @@ public class PolimorfismChild : PolimorfismBasic
       //  print("New content of the method Show()");
     }
 
+    
+
     void Show1(int numberOfShow)
     {
         print("Show nunber " + numberOfShow);
+
+        IEnumerator Rotate()
+        {
+            int i = 1;
+            while (true)
+            {
+                transform.rotation = Quaternion.Euler(0, transform.rotation.y + i, 0);
+                    i++;
+                yield return null;
+            }
+        }
+
+        StartCoroutine(Rotate());
     }
 
     void Show2(int numberOfShow)
