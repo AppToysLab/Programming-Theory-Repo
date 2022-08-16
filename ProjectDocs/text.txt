@@ -1,0 +1,2 @@
+In the parent class void Show just printing this text, but the same void in child classes was override and now 
+it will show different behavior for every single item (rotation, color, name). 

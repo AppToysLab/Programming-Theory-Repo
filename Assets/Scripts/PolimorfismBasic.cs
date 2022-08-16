@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PolimorfismBasic : MonoBehaviour
 {
@@ -16,6 +17,10 @@ public class PolimorfismBasic : MonoBehaviour
     [SerializeField]
     private List<float> xPosChildObject;
 
+    public char[] text;
+    [SerializeField]
+    public string textForPrint = "";
+
     void Start()
     {
         xPosChildObject = new List<float>(1);
@@ -28,7 +33,7 @@ public class PolimorfismBasic : MonoBehaviour
            xPosChildObject.Add(countChilds * stepXPos);
            GameObject polimorfChild = Instantiate(buttonPrefab,
                                    new Vector3( leftBound + xPosChildObject[xPosChildObject.Count - 1], 
-                                   canvas.transform.position.y + 50, 0), 
+                                   canvas.transform.position.y -25, 0), 
                                    buttonPrefab.transform.rotation);
 
            polimorfChild.transform.SetParent(canvas);
@@ -41,7 +46,28 @@ public class PolimorfismBasic : MonoBehaviour
    public virtual void Show(int count)
     {
         voidText.SetActive(true);
-        print(" Void Show on te basic class ");
+        SplitString();
+    }
+
+    public void SplitString()
+    {
+        text = new char [1000];
+        text = textForPrint.ToCharArray();
+        
+        IEnumerator PrintToSpell()
+        {
+            string textForShowing = "";
+            foreach (var item in text)
+            {
+                textForShowing += item;
+                GetComponentInChildren<TextMeshProUGUI>().text = textForShowing;
+
+                yield return new WaitForSeconds(0.1f);
+                yield return textForShowing;
+            }
+            
+        }
+        StartCoroutine(PrintToSpell());
     }
 
 }

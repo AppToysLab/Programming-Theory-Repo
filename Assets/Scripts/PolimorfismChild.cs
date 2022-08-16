@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+
 
 public class PolimorfismChild : PolimorfismBasic
 {
@@ -11,15 +13,8 @@ public class PolimorfismChild : PolimorfismBasic
         Show(instanceCount);
     }
 
-    void Update()
-    {
-
-    }
-
     public override void Show(int count)
     {
-        GameObject voidText = GameObject.Find("Void Text");
-        voidText.SetActive(false);
         switch (count)
         {
             case 1: Show1(count);
@@ -32,39 +27,66 @@ public class PolimorfismChild : PolimorfismBasic
                 Show3(count);
                 break;
         }
-
-      //  print("New content of the method Show()");
     }
 
     
 
     void Show1(int numberOfShow)
     {
-        print("Show nunber " + numberOfShow);
+        GetComponentInChildren<Image>().color = Color.green ;
+        GetComponentInChildren<TextMeshProUGUI>().text = "Child " + instanceCount;
 
         IEnumerator Rotate()
         {
-            int i = 1;
+            float i = 0.1f;
             while (true)
             {
-                transform.rotation = Quaternion.Euler(0, transform.rotation.y + i, 0);
-                    i++;
+                transform.rotation = Quaternion.Euler(0, 0, transform.rotation.z + i);
+                    i += 0.2f;
                 yield return null;
             }
         }
-
         StartCoroutine(Rotate());
     }
 
     void Show2(int numberOfShow)
     {
         GetComponentInChildren<Image>().color = Color.yellow;
-        print("Show nunber " + numberOfShow);
+        GetComponentInChildren<TextMeshProUGUI>().text = "Child " + instanceCount;
+        IEnumerator Rotate()
+        {
+            float i = 1;
+            while (true)
+            {
+                transform.rotation = Quaternion.Euler( transform.rotation.x + i , 1 , 0);
+                i += 0.2f;
+                yield return null;
+            }
+        }
+        StartCoroutine(Rotate());
     }
 
     void Show3(int numberOfShow)
     {
-        print("Show nunber " + numberOfShow);
+        GetComponentInChildren<Image>().color = Color.cyan;
+        GetComponentInChildren<TextMeshProUGUI>().text = "Child " + instanceCount;
+        RectTransform rt;
+        rt = GetComponent<RectTransform>();
+        IEnumerator Scaling()
+        {
+            float i = 0.1f;
+            while (true)
+            {
+                rt.localScale = new Vector3(i, i, 1);
+                i += 0.0015f;
+                if (i > 0.99f)
+                {
+                    i = 0;
+                }
+                yield return null;
+            }
+        }
+        StartCoroutine(Scaling());
     }
 
 }
