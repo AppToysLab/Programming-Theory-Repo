@@ -7,6 +7,7 @@ public class PolimorfismBasic : MonoBehaviour
     private int countChilds = 1;
     public Transform canvas;
     public GameObject buttonPrefab;
+    public GameObject voidText;
 
     [SerializeField]
     float leftBound;
@@ -39,6 +40,7 @@ public class PolimorfismBasic : MonoBehaviour
 
    public virtual void Show(int count)
     {
+        voidText.SetActive(true);
         print(" Void Show on te basic class ");
     }
 

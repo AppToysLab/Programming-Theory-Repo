@@ -18,6 +18,8 @@ public class PolimorfismChild : PolimorfismBasic
 
     public override void Show(int count)
     {
+        GameObject voidText = GameObject.Find("Void Text");
+        voidText.SetActive(false);
         switch (count)
         {
             case 1: Show1(count);
@@ -56,6 +58,7 @@ public class PolimorfismChild : PolimorfismBasic
 
     void Show2(int numberOfShow)
     {
+        GetComponentInChildren<Image>().color = Color.yellow;
         print("Show nunber " + numberOfShow);
     }
 
