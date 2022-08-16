@@ -155,13 +155,13 @@ MonoBehaviour:
   canvas: {fileID: 727489497}
   buttonPrefab: {fileID: 4759867735367717130, guid: 04941218a65d1bf43bbb6be204f3c9a1, type: 3}
   voidText: {fileID: 619693539}
-  leftBound: 450
-  stepXPos: 300
+  leftBound: 310
+  stepXPos: 260
   xPosChildObject: []
   text: 
-  textForPrint: 'In the parent class void Show just printing this text, but the same
-    void in child classes was override and now  it will show different behavior for
-    every single item (rotation, color, name).  Please, push the button "Generate
+  textForPrint: 'In the parent class void "Show" just printing this text, but the
+    same void in child classes was override and now  it will show different behavior
+    for every single item (rotation, color, name).  Please, push the button "Generate
     Childs" three times.  '
 --- !u!4 &49285018
 Transform:
@@ -214,9 +214,9 @@ RectTransform:
   m_Father: {fileID: 1781671322}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 230, y: -159.86429}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 230, y: 139}
   m_SizeDelta: {x: 320, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &53203818
@@ -434,7 +434,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 230, y: -182.7265}
+  m_AnchoredPosition: {x: 230, y: -138}
   m_SizeDelta: {x: 320, y: 196}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &506102239
@@ -566,8 +566,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 142, y: 328}
-  m_SizeDelta: {x: 902.7816, y: 202.3464}
+  m_AnchoredPosition: {x: 173.15027, y: 192.66962}
+  m_SizeDelta: {x: 711.0822, y: 247.6721}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &619693541
 MonoBehaviour:
@@ -616,8 +616,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -652,7 +652,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -4.902649, y: 0, z: -3.451416, w: -41.361267}
+  m_margin: {x: -4.902649, y: 0, z: -3.451416, w: -4.0341797}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -791,7 +791,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: call of the void Show on the Basic class
+  m_text: Call of the void "Show" on the Basic class
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -818,8 +818,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 42
+  m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -902,10 +902,10 @@ RectTransform:
   m_Father: {fileID: 727489497}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.39837646, y: 342.6156}
-  m_SizeDelta: {x: -117.983, y: -736.2053}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 694.848, y: -186.34125}
+  m_SizeDelta: {x: 1270.916, y: 335.2047}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &720952210
 MonoBehaviour:
@@ -1218,9 +1218,9 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 11.848022, y: -55}
-  m_SizeDelta: {x: -95.084, y: -720.0317}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 694.848, y: 211.36398}
+  m_SizeDelta: {x: 1270.916, y: 283.2404}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1781671323
 MonoBehaviour:

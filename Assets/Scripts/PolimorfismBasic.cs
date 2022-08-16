@@ -33,7 +33,7 @@ public class PolimorfismBasic : MonoBehaviour
            xPosChildObject.Add(countChilds * stepXPos);
            GameObject polimorfChild = Instantiate(buttonPrefab,
                                    new Vector3( leftBound + xPosChildObject[xPosChildObject.Count - 1], 
-                                   canvas.transform.position.y -25, 0), 
+                                   canvas.transform.position.y -180, 0), 
                                    buttonPrefab.transform.rotation);
 
            polimorfChild.transform.SetParent(canvas);
