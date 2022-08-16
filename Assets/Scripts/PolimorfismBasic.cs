@@ -62,7 +62,7 @@ public class PolimorfismBasic : MonoBehaviour
                 textForShowing += item;
                 GetComponentInChildren<TextMeshProUGUI>().text = textForShowing;
 
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSeconds(0.06f);
                 yield return textForShowing;
             }
             
