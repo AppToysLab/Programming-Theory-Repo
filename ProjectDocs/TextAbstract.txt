@@ -1,0 +1,7 @@
+We are create the interface "IShow" and create inside of it one and only method "Show" with signature
+of the method is "string MyMethod(int)". One more class "ShowMaker" implemented that interface and has describe
+of the method "Show" according to the signature. 
+For demonstration of an Abstraction in OOP, we  will call this method by another 
+class "ShowController". ShowController class take away to own enter  type of data "IShow", so if you give to it 
+instanse of the "ShowMaker" class and run the Show method  - we will seeing the squre. It's exactly what should will be.
+Please, press the button "ShowController"
