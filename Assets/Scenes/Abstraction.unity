@@ -887,8 +887,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.94000006}
-  m_AnchoredPosition: {x: 104, y: 17.411606}
-  m_SizeDelta: {x: 0.000061035, y: 98.4431}
+  m_AnchoredPosition: {x: 52, y: 17.411606}
+  m_SizeDelta: {x: -104, y: 98.4431}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &619693541
 MonoBehaviour:
@@ -973,7 +973,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -6.978424, y: 0, z: 207.58447, w: 97.098724}
+  m_margin: {x: -6.978424, y: 0, z: 18.04419, w: 97.098724}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1546,8 +1546,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.69020844}
   m_AnchorMax: {x: 0.93130165, y: 1}
-  m_AnchoredPosition: {x: -99.1445, y: -74.89697}
-  m_SizeDelta: {x: 198.287, y: 82.205}
+  m_AnchoredPosition: {x: -70.07, y: -74.89697}
+  m_SizeDelta: {x: 256.44, y: 82.205}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1558138778
 MonoBehaviour:
@@ -1570,14 +1570,14 @@ MonoBehaviour:
   stepXPos: 220
   xPosChildObject: []
   text: 
-  textForPrint: We are create the interface "IShow" and create inside of it one and
-    only method "Show" with signature of the method is "string MyMethod(int)". One
-    more class "ShowMaker" implemented that interface and has describe of the method
-    "Show" according to the signature.  For demonstration of an Abstraction in OOP,
-    we  will call this method by another  class "ShowController". ShowController
-    class take away to own enter  type of data "IShow", so if you give to it  instanse
-    of the "ShowMaker" class and run the Show method  - we will seeing the squre.
-    Please, press the button "ShowController"
+  textForPrint: 'We create the interface "IShow" and create inside of it one and
+    only method "Show" with the signature of the method "string MyMethod(int)". One
+    class "ShowMaker" implemented that interface and has described method "Show"
+    according to the signature.  For demonstration of the Abstraction in OOP, we 
+    will call this method by another  class "ShowController". ShowController class
+    takes as input an "IShow", type so if you give to it an instanse of the "ShowMaker"
+    class and run the Show method  - we will see the square. It''s exactly what should
+    be. Please, press the button "ShowController" '
 --- !u!114 &1558138779
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,3 +1,3 @@
-Public "Show" method was created in Parent class and will make object rotation. 
-Child class already has that one, becourse it inharit all  public methods from the Parent class.  So only thing  what it should do - just to call this method. In our case "Show()" in Start method.
-Please, press button Child three times.
+Public method "Show" was created in Parent class and will make object rotate. 
+Child class already has that method because it inharits all  public methods from the Parent class.  So the only thing  that it should do - just call this method. In our case "Show()" in Start method.
+Please, press the button Child three times.
