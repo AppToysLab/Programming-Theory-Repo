@@ -1,8 +1,0 @@
-We create the interface "IShow" and create inside of it one and only method "Show" with the signature 
-of the method "string MyMethod(int)". One class "ShowMaker" implemented that interface and has 
-described method "Show" according to the signature. 
-For demonstration of the Abstraction in OOP, we  will call this method by another 
-class "ShowController". ShowController class takes as input an "IShow", type so if you give to it
-an instanse of the "ShowMaker" class and run the Show method  - we will see the square. It's exactly
-what should be.
-Please, press the button "ShowController"
