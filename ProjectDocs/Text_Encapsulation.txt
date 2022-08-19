@@ -1,7 +1,6 @@
-Class "Item" (Yellow Squre gameObject on the sceen) has two methods. First one is describeы a process of the rotation of the squre. 
-It needs to take two parameters as input: if there will be rotation or not ( type bool)  and speed of rotation 
-(type float). 
+Class "Item" (Yellow Squre gameObject on the sceen) has two methods. First one describes a process of the rotation of the squre. 
+It needs to take two parameters as input: if there will be rotation or not ( type bool)  and speed of the rotation (type float). 
 This method is public and can be called from outside(in our case by the button "Rotation Controller" click).
 Second one is privat and  can do only thing -  change the color of squre every single sec if squre is rotated. This method impossible to 
-call from outside, so this way mechanics of the change of the color was exactly Encapsuleted in privat method. In this way another objects   knows
-nothing about this method  and cannot used it.
+call from outside, so this way mechanics of the change of the color was exactly Encapsuleted in privat method. In this way another objects
+knows nothing about this method and cannot used it.
