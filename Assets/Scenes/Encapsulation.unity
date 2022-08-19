@@ -1584,15 +1584,15 @@ MonoBehaviour:
   stepXPos: 220
   xPosChildObject: []
   text: 
-  textForPrint: 'Class "Item" (Yellow Squre gameObject on the sceen) has two methods.
-    First one describes a process of the rotation of the squre.  It needs to take
+  textForPrint: 'Class "Item" (Yellow Square gameObject on the sceen) has two methods.
+    First one describes a process of the rotation of the square.  It needs to take
     two parameters as input: if there will be rotation or not ( type bool)  and speed
     of the rotation (type float).  This method is public and can be called from outside(in
-    our case by the button "Rotation Controller" click). Second one is privat and 
+    our case by the button "Rotation Controller" click). Second one is private and 
     can do only thing -  change the color of squre every single sec if squre is rotated.
     This method impossible to  call from outside, so this way mechanics of the change
-    of the color was exactly Encapsuleted in privat method. In this way another objects
-    knows nothing about this method and cannot used it.'
+    of the color was exactly Encapsulated in private method. In this way another
+    objects know nothing about this method and cannot used it.'
 --- !u!114 &1558138779
 MonoBehaviour:
   m_ObjectHideFlags: 0
